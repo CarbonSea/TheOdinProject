@@ -1,0 +1,15 @@
+body{
+    font-size: 30px;
+}
+
+.pink-class {
+    background-color: pink;
+}
+
+#just-blue {
+color: blue;
+}
+
+#just-green {
+    background-color: greenyellow;
+}
