@@ -14,4 +14,10 @@ ___
 - Strict equality is strict. Different types from both sides lead to false.
 - Be careful when using comparisons like > or < with variables that can occasionally be null/undefined. Checking for null/undefined separately is a good idea.
 
+### 3. Logical Operators
+- There are four logical operators in JavaScript: || (OR), && (AND), ! (NOT), ?? (Nullish Coalescing)
+- Although they are called “logical”, they can be applied to values of any type, not only boolean. Their result can also be of any type.
+- The precedence of AND && operator is higher than OR ||.
+- 
+
 
