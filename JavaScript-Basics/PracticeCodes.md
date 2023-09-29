@@ -1,5 +1,29 @@
 # Javascript Basics - Foundation
 
+### Gists
+
+Q) Write an if condition to check that age is between 14 and 90 inclusively. "Inclusively” means that age can reach the edges 14 or 90.
+
+```
+let age = 23;
+if (age >= 14 && age<=90) {
+alert("Yes!");
+}
+```
+
+Q) Write an if condition to check that age is NOT between 14 and 90 inclusively. Create two variants: the first one using NOT !, the second one – without it.
+let age = 23;
+if (!(age >= 14 && age<=90)) {
+alert("Yes!");
+
+```
+}
+let age = 23;
+if (age > 14 || age<90) {
+alert("Yes!");
+}
+```
+
 ### Conditional Branching :
 
 Q) The name of JavaScript
@@ -79,6 +103,128 @@ else {
   alert("Error");
 }
 ```
+
+---
+
+Q) Rewrite 'if' into '?'
+Rewrite this if using the conditional operator '?':
+
+let result;
+if (a + b < 4) {
+result = 'Below';
+} else {
+result = 'Over';
+}
+
+```
+let result = (a=b<4) ? "below" : "over";
+```
+
+---
+
+Q) Rewrite 'if..else' into '?'
+Rewrite if..else using multiple ternary operators '?'.
+For readability, it’s recommended to split the code into multiple lines.
+
+let message;
+if (login == 'Employee') {
+message = 'Hello';
+} else if (login == 'Director') {
+message = 'Greetings';
+} else if (login == '') {
+message = 'No login';
+} else {
+message = '';
+}
+
+```
+let message;
+let login = prompt("Whats your designation ?","");
+
+message = (login == "Employee")? "Hello" :
+          (login=="Director")? "Greetings" :
+          (login == '') ? "No login " : "Error!!";
+
+alert(message);
+```
+
+---
+
+### The "switch" statement
+
+Q) Rewrite the "switch" into an "if"
+
+Write the code using if..else which would correspond to the following switch :
+
+switch (browser) {
+case 'Edge':
+alert( "You've got the Edge!" );
+break;
+
+case 'Chrome':
+case 'Firefox':
+case 'Safari':
+case 'Opera':
+alert( 'Okay we support these browsers too' );
+break;
+
+default:
+alert( 'We hope that this page looks ok!' );
+}
+
+```
+let browser = prompt("Enter value?","");
+if (browser == "Edge") {
+  alert("You have Edge");
+}
+else if (browser == "Opera" | browser === "Chrome"| browser=="Safari"|browser=="Firefox") {
+  alert("Okay we support these browsers too");}
+
+else {
+  alert("We hope that this page looks ok!");
+}
+```
+
+---
+
+Q) Rewrite "if" into "switch"
+Rewrite the code below using a single switch statement:
+
+let a = +prompt('a?', '');
+
+if (a == 0) {
+alert( 0 );
+}
+if (a == 1) {
+alert( 1 );
+}
+
+if (a == 2 || a == 3) {
+alert( '2,3' );
+}
+
+```
+let a = +prompt('a?', '');
+
+switch (a) {
+  case 0:
+    alert(0);
+    break;
+
+  case 1:
+    alert(1);
+    break;
+
+  case 2:
+  case 3:
+    alert("2 or 3");
+    break;
+
+  default :
+    alert("Check again");
+    break;
+
+}
+```
 ___
 
-Q) 
