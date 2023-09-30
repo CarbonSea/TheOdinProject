@@ -1,4 +1,4 @@
-# Javascript Basics - Foundation
+# Javascript - Foundation (Fundamentals Part 2)
 
 ### Gists
 
@@ -226,5 +226,5 @@ switch (a) {
 
 }
 ```
-___
 
+---
