@@ -1,4 +1,4 @@
-# Javascript - Foundation (Fundamentals Part 2)
+# Javascript - Fundamentals Part 3
 
 ### Gists
 
