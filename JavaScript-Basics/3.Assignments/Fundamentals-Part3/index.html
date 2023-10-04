@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions In JavaScript</title>
+  </head>
+  <script>
+    function add(a, n) {
+      return a + n;
+    }
+
+    function multiply(a, n) {
+      return a * n;
+    }
+
+    function capitalize() {
+      let str = prompt("Please enter your string value ?");
+      let newStr = str.slice(0, 4);
+      return newStr.toUpperCase();
+    }
+
+    function lastLetter() {
+      let str = prompt("Please enter your string to find out the last letter?");
+      let newStr = str.slice(-1);
+      return newStr;
+    }
+
+    console.log(add(3, 5));
+    console.log(multiply(3, 5));
+    console.log(capitalize());
+    console.log(lastLetter());
+  </script>
+
+  <body>
+    <h1>Functions</h1>
+  </body>
+</html>
